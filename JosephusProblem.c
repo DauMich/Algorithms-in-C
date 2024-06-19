@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-struct node{
+struct node {
     int key; struct node *next;
 };
 
-main(){
+main() {
     int i, N, M;
     struct node *t, *x;
     scanf("%d %d", &N, &M);
@@ -24,5 +24,5 @@ main(){
             free(x);
         }
     }
-    print("%d\n", t->key);
+    printf("%d\n", t->key);
 }
